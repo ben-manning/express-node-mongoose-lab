@@ -27,7 +27,7 @@ router.get('/:id', function(req, res, next){
 
 
 //EDIT
-router.get('/edit/:id', function(req, res, next){
+router.get('/:id/edit', function(req, res, next){
   res.send('Songs EDIT');
 });
 
