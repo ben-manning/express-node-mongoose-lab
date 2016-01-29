@@ -4,6 +4,8 @@
 
 `express songsapp -e`
 
+Don't forget to `npm install`
+
 ###Create some Routes
 
 ```javascript
