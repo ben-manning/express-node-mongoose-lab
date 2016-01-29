@@ -6,7 +6,7 @@ var Song = require('../models/Song');
 //INDEX
 router.get('/', function(req, res, next){
   Song.find(function(err, songs){
-    if(error) res.json({message: 'Could not find any songs'});
+    if(err) res.json({message: 'Could not find any songs'});
     res.render('layout', {songs: songs});    
   })
 });
