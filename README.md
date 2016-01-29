@@ -3,8 +3,8 @@ title: Connecting Express Routes to Mongo Lab
 type: lab
 duration: "1:25"
 creator:
-    name: Meredith Bryan
-    city: Los Angeles
+    created: Meredith Bryan/LA
+    editor: Marc Wright/ATL
 competencies: Server Applications
 ---
 
@@ -17,9 +17,9 @@ competencies: Server Applications
 
 We’ve spent a lot of time this week writing apps with Node and Express from scratch, so let's get some more [reps](http://www.livestrong.com/article/153380-definition-of-reps-sets/) and build out an app that includes all of what we've learned. Remember, practice will make you better; this is why we’re having you repeat these steps, over and over again.
 
-For this lab, we want you to get creative: create your own API with RESTful resources and connect your API to Mongo. In the solution code provided, we've used the `Candy` resource from Tuesday's *Bulding Express Routes Lab* as inspiration, but remember, you'll be building something with a different theme. *Kitties*, *puppies*, *car parts* - **you name it!** The world is your oyster so have fun and pick a theme you'll have fun with!
+For this lab, we want you to get creative: create your own API with RESTful resources and connect your API to Mongo. In the solution code provided, we've used a `Song` resource as inspiration, but remember, you'll be building something with a different theme. *Kitties*, *puppies*, *car parts* - **you name it!** The world is your oyster so have fun and pick a theme you'll have fun with!
 
-You're going to use Mongoose to create a schema for your model, as you've already done - again, think back to the Animals app. As a **bonus challenge**, we want you to try and to create a schema that incorporates embedded and/or referenced documents.
+You're going to use Mongoose to create a schema for your model, as you've already done - again, think back to the Cars app. As a **bonus challenge**, we want you to try and to create a schema that incorporates embedded and/or referenced documents.
 
 ## Exercise
 
@@ -36,11 +36,16 @@ You're going to use Mongoose to create a schema for your model, as you've alread
   - Create a `views` directory and `ejs` files in that directory
   - Challenge yourself by DRYing up your code and using a [partial](https://scotch.io/tutorials/use-ejs-to-template-your-node-application#ejs-partials-footer-ejs,-head-ejs,-header-ejs)!
 
-- Deploy the app
- - We just went over this in class today so refer to your notes, Google to your heart's content, or ask a buddy for the steps involved to push your app live. If all else fails and you get super stuck, ask an instructor for assistance.
-
 **Bonus:**
 - Incorporate embedded and referenced documents with Mongoose.  Give it a try!
+
+
+#### Suggestions
+- Get the routes working with cURL or Insomnia
+- Add Mongoose to your app
+- Convert the routes to ping your database
+- Get an index view working
+- Get a form working
 
 #### Deliverable
 
