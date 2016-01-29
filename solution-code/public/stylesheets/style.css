@@ -1,0 +1,20 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-image: url('https://wallpaperscraft.com/image/circles_background_bright_colorful_65925_1920x1080.jpg');
+}
+
+h1, h3 {
+  font-family: 'Raleway', cursive;
+  text-align: center;
+}
+
+.container {
+  width: 75%;
+}
+
+ul
+{
+    list-style-type: none;
+}

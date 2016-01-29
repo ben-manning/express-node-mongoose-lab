@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Songs App</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheets/style.css" />
+</head>
+<body>
+  <h1>Songs</h1>
+
+  <div class="container">
+    <% include ./partials/songs/form %>
+  </div>
+
+  <hr>
+  
+  <div class="container">
+    <% for(var i=0; i< songs.length; i++) {  %>
+      <ul>
+        <li><strong>Name : </strong> <%= songs[i].artist %></li>  
+        <li><strong>Title : </strong> <%= songs[i].title %></li>
+        <li><strong>Genre : </strong> <%= songs[i].genre %></li>
+      </ul>
+    <% } %>
+  </div>  
+
+</body>
+</html>
