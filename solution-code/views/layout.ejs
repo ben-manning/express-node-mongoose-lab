@@ -22,6 +22,16 @@
         <li><strong>Name : </strong> <%= songs[i].artist %></li>  
         <li><strong>Title : </strong> <%= songs[i].title %></li>
         <li><strong>Genre : </strong> <%= songs[i].genre %></li>
+        <li>
+          <form method="GET" action="/songs/<%= songs[i].id %>">
+            <button type="submit" class="btn btn-xs btn-danger">Show</button>
+          </form>
+        </li>
+        <li>  
+          <form method="POST" action="/songs/<%= songs[i].id %>?_method=DELETE">
+            <button type="submit" class="btn btn-xs btn-danger">Delete</button>
+          </form>
+        </li>
       </ul>
     <% } %>
   </div>  

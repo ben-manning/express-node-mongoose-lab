@@ -14,7 +14,7 @@ router.get('/', function(req, res, next){
 
 //NEW
 router.get('/new', function(req, res, next){
-  res.render('partials/songs/form');
+  res.send('NEW');
 });
 
 
@@ -28,7 +28,10 @@ router.get('/:id', function(req, res, next){
 
 //EDIT
 router.get('/:id/edit', function(req, res, next){
-  res.send('Songs EDIT');
+  Song.findById( { _id: req.params.id}, function(err, song){
+    if(err) res.json({message: 'Could not find any songs'});
+    res.render('layout', {song: song});    
+  })
 });
 
 
@@ -69,7 +72,7 @@ router.delete('/:id', function(req, res, next){
   Song.findByIdAndRemove(req.params.id, function(err, song){
     if (err) throw err;
     console.log('Song successfully deleted!');
-    res.redirect('/');
+    res.redirect('/songs');
   });
 });
 
