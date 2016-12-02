@@ -6,6 +6,9 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 
+// Set up port to listen
+var port = process.env.PORT || 3000;
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var songs = require('./routes/songs');
@@ -65,3 +68,7 @@ app.use(function(err, req, res, next) {
 
 
 module.exports = app;
+
+
+app.listen(port);
+console.log("The app is listening at " + port);
